@@ -8,12 +8,12 @@
     <title>tailwind-rockets</title>
   </head>
   <body class="bg-black text-white">
-    <header class="bg-emerald-600">
-      <div class="max-w-200 flex justify-between mx-auto p-5">
-        <p>🚀Acame Rockets</p>
+    <header class="bg-emerald-600 h-(--header-hight)">
+      <div class="max-w-max-width flex justify-between mx-auto p-5">
+        <p class="text-2xl">🚀Acame Rockets</p>
         <ul class="flex flex-wrap">
           <li>
-            <a href="#" class="mx-4">OurRockets</a>
+            <a href="#" class="mx-4">Our Rockets</a>
           </li>
           <li>
             <a href="#" class="mx-4">Testomonials</a>
@@ -22,5 +22,17 @@
         </ul>
       </div>
     </header>
+    <main>
+      <section class="min-h-[calc(100vh-var(--header-hight))] max-w-max-width flex flex-wrap justify-between mx-auto relative after:right-2/ after:h-0.75 after:translate-x-1/2 after:block after:w-1/2 after:bg-gray-700">
+        <div class="w-full flex justify-around flex-wrap items-center">
+          <div class="mr-1 max-w-125">
+            <h1 class="text-6xl">We Boldy Go <span class="text-violet-400">Where No Rocket Has Gone Before</span>...</h1>
+            <p>We're building rockets for the next centrury today.From the moon to Mars,Jupiter and beyond...</p>
+            <p>Think Acame Rockets</p>
+          </div>
+          <img src="/src/assets/rocketdab.png" alt="rocket person dapping" width="400" height="400" class="self-center" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

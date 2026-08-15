@@ -1,1 +1,5 @@
 @import "tailwindcss";
+@theme {
+  --header-hight: 70px;
+  --container-max-width: 1200px;
+}
