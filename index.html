@@ -2,35 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/rocketdab.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name />
     <script type="module" src="/src/index.ts"></script>
     <title>tailwind-rockets</title>
   </head>
-  <body class="bg-black text-white">
-    <header class="bg-emerald-600 h-(--header-hight)">
-      <div class="max-w-max-width flex justify-between mx-auto p-5">
-        <p class="text-2xl">🚀Acame Rockets</p>
-        <ul class="flex flex-wrap">
+  <body class="dark:bg-black dark:text-white">
+    <header class="h-(--header-hight) bg-emerald-600">
+      <div class="max-w-max-width mx-auto flex h-full items-center justify-between p-3">
+        <p class="text-[clamp(1.2rem,2vw+0.2rem,2rem)]">🚀Acame Rockets</p>
+        <button class="text-2xl sm:hidden">&#9776;</button>
+        <ul class="hidden sm:flex">
           <li>
             <a href="#" class="mx-4">Our Rockets</a>
           </li>
           <li>
             <a href="#" class="mx-4">Testomonials</a>
           </li>
-          <li><a href="#" class="mx-4">Contact Us</a></li>
+          <li>
+            <a href="#" class="mx-4">Contact Us</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="min-h-[calc(100vh-var(--header-hight))] max-w-max-width flex flex-wrap justify-between mx-auto relative after:right-2/ after:h-0.75 after:translate-x-1/2 after:block after:w-1/2 after:bg-gray-700">
-        <div class="w-full flex justify-around flex-wrap items-center">
+      <section
+        class="max-w-max-width after:right-2/ relative mx-auto flex min-h-[calc(100vh-var(--header-hight)-100px)] flex-wrap justify-between p-5 after:block after:h-0.75 after:w-1/2 after:translate-x-1/2 after:bg-gray-700">
+        <div class="mb-6 flex w-full flex-wrap items-center justify-around text-center min-[944px]:text-left">
           <div class="mr-1 max-w-125">
-            <h1 class="text-6xl">We Boldy Go <span class="text-violet-400">Where No Rocket Has Gone Before</span>...</h1>
-            <p>We're building rockets for the next centrury today.From the moon to Mars,Jupiter and beyond...</p>
-            <p>Think Acame Rockets</p>
+            <h1 class="text-5xl leading-none font-bold">
+              We Boldy Go
+              <span class="text-violet-400">Where No Rocket Has Gone Before</span>...
+            </h1>
+            <p class="text-[clamp(0.5rem,10vw,1rem)]">
+              We're building rockets for the next centrury today.From the moon to Mars,Jupiter and beyond...
+            </p>
+            <p class="text-[clamp(0.5rem,10vw,1rem)]">Think Acame Rockets</p>
           </div>
-          <img src="/src/assets/rocketdab.png" alt="rocket person dapping" width="400" height="400" class="self-center" />
+          <img src="/images/rocketdab.png" alt="rocket person dapping" width="400" height="400" class="self-center" />
+        </div>
+      </section>
+      <section
+        class="after:right-2/ relative after:block after:h-0.75 after:w-1/2 after:translate-x-1/2 after:bg-gray-700">
+        <h2 class="mb-20 text-center text-5xl">Our Rockets</h2>
+        <div class="max-w-max-width mx-auto mb-4 flex flex-wrap justify-center gap-15">
+          <div class="coor-b flex flex-col items-center rounded-4xl border-4 border-gray-400 p-5 dark:border-gray-800">
+            <img src="/images/rocketride.png" alt="man riding on a rocket" height="200" width="200" />
+            <p>Affordable Exploration</p>
+          </div>
+          <div class="coor-b flex flex-col items-center rounded-4xl border-4 border-gray-400 p-5 dark:border-gray-800">
+            <img src="/images/rocketman.png" alt="man on a rocket" height="200" width="200" />
+            <p>Best Selling Rocket</p>
+          </div>
+          <div class="coor-b flex flex-col items-center rounded-4xl border-4 border-gray-400 p-5 dark:border-gray-800">
+            <img src="/images/rocketlaunch.png" alt="rocket launch" height="200" width="200" />
+            <p>Luxury StarShip</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="max-w-max-width mx-auto p-5">
+          <h2 class="my-3 text-center text-3xl font-bold">Testimonials</h2>
+          <figure
+            class="relative mb-5 rounded-2xl bg-emerald-500 p-3 text-gray-100 dark:bg-transparent dark:text-slate-400">
+            <blockquote
+              class="mb-2 before:absolute before:top-5 before:left-5 before:text-5xl before:content-['\201C'] after:absolute after:right-5 after:bottom-5 after:text-5xl after:content-['\201C']">
+              <p class="p-5 text-center text-xl">
+                Acme has Always been there for me. Their Exploerer rocket arrived in a wodden crate as explectaed.
+                Life-long customer! A++ shopping experience
+              </p>
+            </blockquote>
+            <figcaption class="text-right">--Walle E. Cayate. Genius</figcaption>
+          </figure>
+          <figure
+            class="relative mb-5 rounded-2xl bg-emerald-500 p-3 text-gray-100 dark:bg-transparent dark:text-slate-400">
+            <blockquote
+              class="mb-2 before:absolute before:top-5 before:left-5 before:text-5xl before:content-['\201C'] after:absolute after:right-5 after:bottom-5 after:text-5xl after:content-['\201C']">
+              <p class="p-5 text-center text-xl">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero aut provident deleniti cupiditate nulla
+                nesciunt ex ab quam iure fugit quo sed, aliquam animi labore. Culpa magnam nulla ea quia.
+              </p>
+            </blockquote>
+            <figcaption class="text-right">--Elon mask</figcaption>
+          </figure>
+          <figure
+            class="relative mb-5 rounded-2xl bg-emerald-500 p-3 text-gray-100 dark:bg-transparent dark:text-slate-400">
+            <blockquote
+              class="mb-2 before:absolute before:top-5 before:left-5 before:text-5xl before:content-['\201C'] after:absolute after:right-5 after:bottom-5 after:text-5xl after:content-['\201C']">
+              <p class="p-5 text-center text-xl">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo qui totam rem. Tempora cum suscipit
+                dolorem, consequuntur ut sit maiores fugit voluptate reiciendis voluptatem, atque quaerat consequatur
+                eos, architecto libero. Quaerat sequi magni optio incidunt eaque perferendis inventore maiores, sed,
+                excepturi qui, eligendi dolorum architecto! Praesentium ex nulla nam possimus, sint repudiandae
+                molestiae distinctio natus impedit voluptatum dolorum rem ullam.
+              </p>
+            </blockquote>
+            <figcaption class="text-right">--Walter White</figcaption>
+          </figure>
+          <hr class="mx-auto w-1/2 dark:bg-gray-700" />
         </div>
       </section>
     </main>
